@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+<link rel="stylesheet" type="text/css" href="E:\quiz\Latihan soal\latihan.css"/>
+<script src="../Misc/latihansoal.js"></script>
+<script src="../Misc/hasil-latihan.js"></script>
+<script>
+
+function InputHidden()
+{
+for (var i = 0; i++) {
+   StrAnswered['i'] = "0"
+
+    	for (var i = 0; i++) {
+     	  if(document.CheckQuestions.SOAL1[i].checked)
+       	  StrAnswered[0] = document.CheckQuestions.SOAL1[i].value
+		if (i > 5) break; }
+
+    	for (var i = 0; i++) {
+      if(document.CheckQuestions.SOAL2[i].checked)
+         StrAnswered[1] = document.CheckQuestions.SOAL2[i].value
+		if (i > 5) break; }
+
+    	for (var i = 0; i++) {
+      if(document.CheckQuestions.SOAL3[i].checked)
+         StrAnswered[2] = document.CheckQuestions.SOAL3[i].value
+		if (i > 5) break; }
+
+   StrTmp = ""
+   for(var j=0;  j++) {
+      StrTmp += StrAnswered[i]
+      document.CheckQuestions.Answered.value = StrTmp
+      if (j > StrAnswered.length) break;
+	}
+
+    if (i > 3) break;
+}
+ </script>
+
+<link rel="stylesheet" type="text/css" href="../Styles/latihan.css"/>
+<title></title>
+</head>
+
+<body>
+<br/>
+<div ontouchstart="">
+  <div class="buttonback">
+    <a href="pembelajaran2.xhtml">Back</a>
+  </div>
+</div>
+
+<h3 class="menunav">Soal Latihan Pembelajaran </h3>
+
+
+
+<div class="petunjuk">
+Kerjakan soal-soal berikut dengan memilih jawaban yang paling tepat!
+</div>
+
+<br/>
+
+<form action="h.lat1.xhtml" method="get" name="CheckQuestions" class="form-soal">
+
+
+<!-- question: 1 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 1</h5>
+<div class="soal"><div class="soal">
+Pada saat pertama kali membuka Visual Basic, pilihan tipe project yang kita gunakan adalah….
+<br/></div>
+<ol>
+</ol>
+</div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio1a" type="radio" name="q1" value="a"/><label for="radio1a">A.</label></td>
+<td>
+Standard.exe
+</td>
+<td><br/></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio1b" type="radio" name="q1" value="b"/><label for="radio1b">B.</label></td>
+<td>
+VB.exe
+</td>
+<td><br/></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio1c" type="radio" name="q1" value="c"/><label for="radio1c">C.</label></td>
+<td><label for="radio1c">
+Normal.exe
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio1d" type="radio" name="q1" value="d"/><label for="radio1d">D.</label></td>
+<td><label for="radio1d">
+ActiveX.EXE
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio1e" type="radio" name="q1" value="e"/><label for="radio1e">E.</label></td>
+<td><label for="radio1e">
+ Doc.exe
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 2 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 2</h5>
+<div class="soal"><div class="soal">
+Dalam koding program Visual Basic, perintah untuk langsung keluar dari program pada saat program dijalankan adalah....
+<br/></div>
+</div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio2a" type="radio" name="q2" value="a"/><label for="radio2a">A.</label></td>
+<td><label for="radio2a">
+ Exit
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio2b" type="radio" name="q2" value="b"/><label for="radio2b">B.</label></td>
+<td><label for="radio2b">
+ End
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio2c" type="radio" name="q2" value="c"/><label for="radio2c">C.</label></td>
+<td><label for="radio2c">
+Close
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio2d" type="radio" name="q2" value="d"/><label for="radio2d">D.</label></td>
+<td><label for="radio2d">
+Drop
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio2e" type="radio" name="q2" value="e"/><label for="radio2e">E.</label></td>
+<td><label for="radio2e">
+ Quit
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 3 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 3</h5>
+<div class="soal">
+Instruksi untuk melakukan RUN dalam program visual basic…
+<br/></div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio3a" type="radio" name="q3" value="a"/><label for="radio3a">A.</label></td>
+<td><label for="radio3a">
+F1
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio3b" type="radio" name="q3" value="b"/><label for="radio3b">B.</label></td>
+<td><label for="radio3b">
+F4
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio3c" type="radio" name="q3" value="c"/><label for="radio3c">C.</label></td>
+<td><label for="radio3c">
+F5
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio3d" type="radio" name="q3" value="d"/><label for="radio3d">D.</label></td>
+<td><label for="radio3d">
+Alt+F9
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio3e" type="radio" name="q3" value="e"/><label for="radio3e">E.</label></td>
+<td><label for="radio3e">
+Shift + esc
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 4 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 4</h5>
+<div class="soal"><div class="soal">
+Extension file untuk project dari Visual Basic adalah
+</div>
+</div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio4a" type="radio" name="q4" value="a"/><label for="radio4a">A.</label></td>
+<td><label for="radio4a">
+.xls
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio4b" type="radio" name="q4" value="b"/><label for="radio4b">B.</label></td>
+<td><label for="radio4b">
+.doc
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio4c" type="radio" name="q4" value="c"/><label for="radio4c">C.</label></td>
+<td><label for="radio4c">
+.exe
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio4d" type="radio" name="q4" value="d"/><label for="radio4d">D.</label></td>
+<td><label for="radio4d">
+ .vbp
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio4e" type="radio" name="q4" value="e"/><label for="radio4e">E.</label></td>
+<td><label for="radio4e">
+.pvb
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 5 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 5</h5>
+<div class="soal">
+Untuk membuat tulisan biasa digunakan komponen…
+<br/></div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio5a" type="radio" name="q5" value="a"/><label for="radio5a">A.</label></td>
+<td><label for="radio5a">
+Frame
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio5b" type="radio" name="q5" value="b"/><label for="radio5b">B.</label></td>
+<td><label for="radio5b">
+Option Button
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio5c" type="radio" name="q5" value="c"/><label for="radio5c">C.</label></td>
+<td><label for="radio5c">
+List Box
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio5d" type="radio" name="q5" value="d"/><label for="radio5d">D.</label></td>
+<td><label for="radio5d">
+Command Button
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio5e" type="radio" name="q5" value="e"/><label for="radio5e">E.</label></td>
+<td><label for="radio5e">
+Label
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 6 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 6</h5>
+<div class="soal">
+Untuk membuat sebuah tombol digunakan komponen
+<br/></div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio6a" type="radio" name="q6" value="a"/><label for="radio6a">A.</label></td>
+<td><label for="radio6a">
+Command Botton
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio6b" type="radio" name="q6" value="b"/><label for="radio6b">B.</label></td>
+<td><label for="radio6b">
+Label
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio6c" type="radio" name="q6" value="c"/><label for="radio6c">C.</label></td>
+<td><label for="radio6c">
+Combo box
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio6d" type="radio" name="q6" value="d"/><label for="radio6d">D.</label></td>
+<td><label for="radio6d">
+List box
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio6e" type="radio" name="q6" value="e"/><label for="radio6e">E.</label></td>
+<td><label for="radio6e">
+ Frame
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 7 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 7</h5>
+<div class="soal">
+ Untuk mengganti warna dari tulisan yang akan ditampilkan dalam Label atau Text Box digunakan property…
+<br/></div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio7a" type="radio" name="q7" value="a"/><label for="radio7a">A.</label></td>
+<td><label for="radio7a">
+Back Color
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio7b" type="radio" name="q7" value="b"/><label for="radio7b">B.</label></td>
+<td><label for="radio7b">
+Font Color
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio7c" type="radio" name="q7" value="c"/><label for="radio7c">C.</label></td>
+<td><label for="radio7c">
+Fore Color
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio7d" type="radio" name="q7" value="d"/><label for="radio7d">D.</label></td>
+<td><label for="radio7d">
+Style Color
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio7e" type="radio" name="q7" value="e"/><label for="radio7e">E.</label></td>
+<td><label for="radio7e">
+ Size Color
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 8 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 8</h5>
+<div class="soal">
+Pada sebuah ComboBox, untuk menambahkan atau mengentry tulisan atau daftar ke dalamnya kita menggunakan property yang disebut…
+<br/></div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio8a" type="radio" name="q8" value="a"/><label for="radio8a">A.</label></td>
+<td><label for="radio8a">
+Text
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio8b" type="radio" name="q8" value="b"/><label for="radio8b">B.</label></td>
+<td><label for="radio8b">
+Name
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio8c" type="radio" name="q8" value="c"/><label for="radio8c">C.</label></td>
+<td><label for="radio8c">
+List
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio8d" type="radio" name="q8" value="d"/><label for="radio8d">D.</label></td>
+<td><label for="radio8d">
+Caption
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio8e" type="radio" name="q8" value="e"/><label for="radio8e">E.</label></td>
+<td><label for="radio8e">
+Picture
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 9 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 9</h5>
+<div class="soal">
+Dalam Coding Visual Basic, perintah untuk menampilkan sebuah pesan adalah…
+<br/></div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio9a" type="radio" name="q9" value="a"/><label for="radio9a">A.</label></td>
+<td><label for="radio9a">
+Msg
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio9b" type="radio" name="q9" value="b"/><label for="radio9b">B.</label></td>
+<td><label for="radio9b">
+Show
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio9c" type="radio" name="q9" value="c"/><label for="radio9c">C.</label></td>
+<td>
+Display
+</td>
+</tr>
+<tr><td nowrap="nowrap" width="60px"><input id="radio9d" type="radio" name="q9" value="d"/><label for="radio9d">D.</label></td>
+<td><label for="radio9d">
+MsgBox
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio9e" type="radio" name="q9" value="e"/><label for="radio9e">E.</label></td>
+<td><label for="radio9e">
+ Label
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- question: 10 -->
+<div class="question">
+<h5 class="sigil_not_in_toc">Soal 10</h5>
+<div class="soal">
+Penggantian judul form dapat dilakukan dengan…
+<br/></div>
+<table class="tbsoal">
+<tbody>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio10a" type="radio" name="q10" value="a"/><label for="radio10a">A.</label></td>
+<td><label for="radio10a">
+Klik kanan pada form – rename
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio10b" type="radio" name="q10" value="b"/><label for="radio10b">B.</label></td>
+<td><label for="radio10b">
+Klik kanan – Edit
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio10c" type="radio" name="q10" value="c"/><label for="radio10c">C.</label></td>
+<td><label for="radio10c">
+Menu edit – rename
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio10d" type="radio" name="q10" value="d"/><label for="radio10d">D.</label></td>
+<td><label for="radio10d">
+Form - Klik kanan - ganti nama
+</label></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="60px"><input id="radio10e" type="radio" name="q10" value="e"/><label for="radio10e">E.</label></td>
+<td><label for="radio10e">
+Jendela properties – caption – ganti namanya sesuai keinginan
+</label></td>
+</tr>
+</tbody>
+</table>
+</div><br/>
+<!-- Kunci -->
+<input type="hidden" name="k1" value="a"/>
+<input type="hidden" name="k2" value="b"/>
+<input type="hidden" name="k3" value="c"/>
+<input type="hidden" name="k4" value="d"/>
+<input type="hidden" name="k5" value="e"/>
+<input type="hidden" name="k6" value="a"/>
+<input type="hidden" name="k7" value="b"/>
+<input type="hidden" name="k8" value="c"/>
+<input type="hidden" name="k9" value="d"/>
+<input type="hidden" name="k10" value="e"/>
+
+
+
+
+
+
+
+<div class="menunav">
+<div align="center"><input class="sumbit" type="submit" value="Simpan »"/></div>
+</div></form>
+<br/>
+<div><br/></div>
+<script src="../Misc/latihansoal.js"></script>
+
+<br/>
+<br/>
+<audio controls="" autoplay="true" loop="true">
+    <source src="../Audio/harypoter.mp3" type="audio/mpeg" display="none" position="center"/>
+</audio>
+
+</body>
+</html>
